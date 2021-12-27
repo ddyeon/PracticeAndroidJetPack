@@ -3,7 +3,7 @@ package com.example.pagingtestproject.data
 data class Covid(
     val page: Int,
     val totalCount: Int,
-    val data: ArrayList<CovidData>
+    val data: List<CovidData>
 )
 
 data class CovidData(

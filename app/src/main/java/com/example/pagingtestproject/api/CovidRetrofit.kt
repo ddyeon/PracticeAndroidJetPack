@@ -11,5 +11,7 @@ object CovidRetrofit {
             .baseUrl(Constants.COVID_OPEN_API_DOMAIN)
             .addConverterFactory(GsonConverterFactory.create())
             .addCallAdapterFactory(RxJava3CallAdapterFactory.create())
+
     }
+    val covidapi  = retrofit.build().create(CovidApi::class.java)
 }

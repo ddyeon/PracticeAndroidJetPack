@@ -4,11 +4,12 @@ import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import com.example.pagingtestproject.data.Covid
+import com.example.pagingtestproject.data.CovidData
 import kotlinx.coroutines.flow.Flow
 
 class CovidRepository {
 
-    fun getCovidItemByPaging() : Flow<PagingData<Covid>> {
+    fun getCovidItemByPaging() : Flow<PagingData<CovidData>> {
         return Pager(config = PagingConfig(pageSize = 10, enablePlaceholders = false),
         pagingSourceFactory = {CovidPagingSource()}).flow
     }
