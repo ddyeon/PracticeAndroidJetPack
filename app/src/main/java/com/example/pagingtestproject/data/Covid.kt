@@ -11,5 +11,6 @@ data class CovidData(
     val centerName: String,
     val facilityName: String,
     val address: String,
+    val sigungu: String,
     val phoneNumber: String
 )

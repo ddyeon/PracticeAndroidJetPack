@@ -3,8 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/list_background.xml" value="0.20625" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.19010416666666666" />
         <entry key="app/src/main/res/layout/fragment_covid_list.xml" value="0.24547101449275363" />
+        <entry key="app/src/main/res/layout/item_covid_list.xml" value="0.24230072463768115" />
         <entry key="app/src/main/res/layout/itme_covid_list.xml" value="0.24375" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.19114583333333332" />
       </map>
     </option>
   </component>

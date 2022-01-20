@@ -1,6 +1,6 @@
 package com.example.pagingtestproject.api
 
-import com.example.pagingtestproject.Constants
+import com.example.pagingtestproject.utilities.Constants
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava3.RxJava3CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
