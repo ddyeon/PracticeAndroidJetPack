@@ -22,20 +22,14 @@ class CovidAdapter : PagingDataAdapter<CovidData, CovidAdapter.CovidViewHolder>(
         parent: ViewGroup,
         viewType: Int
     ): CovidViewHolder {
-        val binding = DataBindingUtil.inflate<ItemCovidListBinding>(
-            LayoutInflater.from(parent.context),
-            R.layout.item_covid_list,
-            parent,
-            false
-        )
-
+        val binding = DataBindingUtil.inflate<ItemCovidListBinding>(LayoutInflater.from(parent.context), R.layout.item_covid_list,
+            parent, false)
         return CovidViewHolder(binding)
     }
 
     class CovidViewHolder(private val binding : ItemCovidListBinding) : RecyclerView.ViewHolder(binding.root){
 
         fun bind(covid: CovidData) {
-            Log.d("covid", covid.toString())
             binding.covidInfo = covid
         }
     }

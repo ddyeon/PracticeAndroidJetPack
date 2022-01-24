@@ -17,7 +17,7 @@ class CovidPagingSource : PagingSource<Int, CovidData>() {
     override suspend fun load(params: LoadParams<Int>): LoadResult<Int, CovidData> {
         return try {
             val next = params.key ?: 0
-            val response = CovidRetrofit.covidapi.getCovidHospitalList(next, Constants.COVID_ENCODING_APIKEY)
+            val response = CovidRetrofit.covidapi.getCovidHospitalList(next, Constants.COVID_DECODING_APIKEY)
             LoadResult.Page( data = response.data,
                 prevKey = if (next == 0) null else next - 1,
                 nextKey = next + 1 )

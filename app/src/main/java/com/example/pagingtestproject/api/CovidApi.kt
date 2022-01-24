@@ -12,7 +12,8 @@ import retrofit2.http.Query
 
 interface CovidApi {
     @GET("15077586/v1/centers")
-    fun getCovidHospitalList(
+    suspend fun getCovidHospitalList(
         @Query("page") page: Int,
-        @Header("Authorization") authToken : String) : Covid
+        @Query("serviceKey") key : String) : Covid
+    
 }

@@ -12,6 +12,8 @@ class CovidViewModel: ViewModel() {
     private val repository = CovidRepository()
 
     fun getCovidList() : Flow<PagingData<CovidData>> {
-        return repository.getCovidItemByPaging().cachedIn(viewModelScope)
+        return repository.getCovidItemByPaging()
     }
 }
+
+
